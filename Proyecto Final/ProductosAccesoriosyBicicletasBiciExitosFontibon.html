@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductosAccesorios</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/Estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body class="fondo">
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="Img/Logos/logo bici exitos-2.png" width="140">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto font-weight-bold">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="InicioBiciExitosFontibon.html" target="_blank">Inicio </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="QuienessomosBiciExitosFontibon.html" target="_blank">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="ContactenosBiciExitosFontibon.html" target="_blank">Contáctenos </a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_blank">
+                            Productos <span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="ProductosAccesoriosyBicicletasBiciExitosFontibon.html">Accesorios</a>
+                            <a class="dropdown-item" href="ProductosAccesoriosyBicicletasBiciExitosFontibon.html">Bici Partes</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Buscar por Referencia</a>
+                        </div>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <a class="btn btn-outline-success my-2 my-sm-0"   href="CarritoBiciExitosFontibon.html">Carrito <svg
+                            class="bi bi-cart-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                        </svg> </a>
+
+                </form>
+            </div>
+
+            
+
+        </nav>
+
+        <br>
+        <div class="font-weight-bold shadow p-3 mb-5 bg-white rounded text-sm-center ">
+            ACCESORIOS
+        </div>
+        <div class="row" id="productos">
+        </div>
+        
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+
+        <script>
+            let carrito = [];
+
+            const productos = [
+                {
+                    id: 1,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/bomba de aire.png",
+                    nombre: 'Bomba de Aire',
+                    precio: 17000,
+                    descripcion: 'Bomba de aire'
+                },
+                {
+                    id: 2,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/Candado.png",
+                    nombre: 'Candado',
+                    precio: 182000,
+                    descripcion: 'Giant Protector 1 DT.'
+                },
+                {
+                    id: 3,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/casco.png",
+                    nombre: 'Casco',
+                    precio: 295000,
+                    descripcion: 'Casco Giro Savant Negro/Blanco'
+                },
+                {
+                    id: 4,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/Gafas.png",
+                    nombre: 'Gafas',
+                    precio: 98000,
+                    descripcion: 'Oakley Flight'
+                },
+                {
+                    id: 5,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/Guantes.png",
+                    nombre: 'Guantes',
+                    precio: 98000,
+                    descripcion: 'Giro Gel dedo largo'
+                },
+                {
+                    id: 6,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/guardabarros.png",
+                    nombre: 'Guardabarros',
+                    precio: 59900,
+                    descripcion: 'Rokabike Modelo: 801 Peso: 370 gramos'
+                },
+                {
+                    id: 7,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/kit herramientas.png",
+                    nombre: 'Kit de Herramientas',
+                    precio: 28900,
+                    descripcion: 'Multiherramienta con 15 funciones en 1'
+                },
+                {
+                    id: 8,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/Luces.png",
+                    nombre: 'Luces',
+                    precio: 165000,
+                    descripcion: 'CATEYE VOLT100XC 100 LM RAPID MICRO 15 LM USB'
+                },
+                {
+                    id: 9,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/Mangos.png",
+                    nombre: 'Mangos',
+                    precio: 23000,
+                    descripcion: 'Mangos'
+                },
+                {
+                    id: 10,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/PortaCaramañola.png",
+                    nombre: 'PortaCaramañola',
+                    precio: 68000,
+                    descripcion: 'Bontrager RL lateral Blanco'
+                },
+                {
+                    id: 11,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/protector de cadena.png",
+                    nombre: 'Protector de cadena',
+                    precio: 10900,
+                    descripcion: 'Cannondale Neopreno Ref. 2111'
+                },
+                {
+                    id: 12,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/Rodillos.png",
+                    nombre: 'Rodillo',
+                    precio: 839000,
+                    descripcion: 'RODILLO SARIS MAG + TRAINER para rueda 650b,700c,26″,27″,y 29″'
+                },
+                {
+                    id: 13,
+                    imagen: src= "../Proyecto Final/Imagenes Productos/Accesorios grupo1/Zapatillas.png",
+                    nombre: 'Zapatillas',
+                    precio: 499000,
+                    descripcion: 'GAERNE RAPPA MTB'
+                }
+                
+            ];
+
+            $(document).ready(function () {
+                pintarProductos();
+            });
+
+            function pintarProductos() {
+                productos.forEach(producto => {
+                    html = '<div class="col-md-3">';
+                    html += '<div class="card">';
+                    html += '<img class="img-fluid" src="' + producto.imagen + '" class="card-img-top" alt="...">';
+                    html += '<div class="card-body">';
+                    html += '<h5 class="card-title">' + producto.nombre + '</h5>';
+                    html += '<h3>$' + producto.precio + '</h3>';
+                    html += '<p class="card-text">' + producto.descripcion + '</p>';
+                    html += '<div class="row">';
+                    html += '<div class="col-md-6">';
+                    html += '<select class="form-control" id="cantidadProducto' + producto.id + '">';
+                    for (let i = 1; i <= 5; i++) {
+                        html += '<option value="' + i + '">' + i + '</option>';
+                    }
+                    html += '</select>';
+                    html += '</div>';
+                    html += '<div class="col-md-6">';
+                    html += '<button onclick="agregarCarrito(' + producto.id + ')" class="btn btn-primary btn-block">Agregar</button>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '</div>';
+                    $(html).appendTo('#productos');
+                });
+            }
+
+            function agregarCarrito(id) {
+                const cantidad = $('#cantidadProducto' + id).val();
+                const producto = productos.find(producto => {
+                    return producto.id === id // true or false
+                });
+                producto.cantidad = cantidad;
+                carrito.push(producto);
+                const carritoJSON = JSON.stringify(carrito);
+                localStorage.setItem('carrito', carritoJSON);
+            }
+        </script>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
